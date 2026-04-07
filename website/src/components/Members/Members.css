@@ -1,0 +1,395 @@
+.members-page {
+  padding: 100px 0;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(239, 51, 76, 0.3);
+  letter-spacing: 2px;
+}
+
+.page-description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.members-section {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* Particle Container */
+.particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.purple {
+  color: #EF334C !important;
+}
+
+.project-heading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.members-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  padding: 0 10%;
+}
+
+.year-section {
+  margin-bottom: 60px;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #EF334C;
+  margin: 15px auto 0;
+}
+
+/* Team Member Card */
+.team-member-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(239, 51, 76, 0.3);
+}
+
+.team-member-image-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:top;
+  transition: transform 0.5s ease;
+}
+
+.team-member-card:hover .team-member-image {
+  transform: scale(1.05);
+}
+
+.team-member-info {
+  padding: 20px;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.team-member-position {
+  color: #EF334C;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.team-member-branch {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.team-member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.skill-tag {
+  background-color: rgba(239, 51, 76, 0.1);
+  color: #EF334C;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid rgba(239, 51, 76, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(239, 51, 76, 0.2);
+  transform: translateY(-2px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #EF334C;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #d42a3f;
+  transform: translateY(-3px);
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .team-member-image-container {
+    height: 220px;
+  }
+  
+  .team-member-name {
+    font-size: 1.3rem;
+  }
+  
+  .team-member-position,
+  .team-member-branch {
+    font-size: 0.9rem;
+  }
+  
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+  
+  .social-link {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-title p {
+    font-size: 1rem;
+  }
+  
+  .team-member-image-container {
+    height: 200px;
+  }
+  
+  .team-member-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* Image fallback styles */
+.image-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  color: #EF334C;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Member banner styles */
+.member-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #EF334C;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+  transform: translateY(0) rotate(0);
+  transform-origin: top right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  animation: bannerPulse 2s infinite alternate;
+}
+
+/* Banner pulse animation */
+@keyframes bannerPulse {
+  0% {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Add a small triangle to the banner */
+.member-banner::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 5px 5px;
+  border-color: transparent transparent transparent #c42436;
+}
+
+/* Hover effect for banner */
+.team-member-card:hover .member-banner {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation-play-state: paused;
+}
+
+/* Different banner colors based on roles */
+.banner-lead {
+  background-color: #8e44ad; /* Purple for team leads */
+}
+.banner-lead::before {
+  border-color: transparent transparent transparent #6c3483;
+}
+
+.banner-android {
+  background-color: #27ae60; /* Green for Android */
+}
+.banner-android::before {
+  border-color: transparent transparent transparent #1e8449;
+}
+
+.banner-ios {
+  background-color: #3498db; /* Blue for iOS */
+}
+.banner-ios::before {
+  border-color: transparent transparent transparent #2980b9;
+}
+
+.banner-flutter {
+  background-color: #00B8D4; /* Cyan for Flutter */
+}
+.banner-flutter::before {
+  border-color: transparent transparent transparent #0097A7;
+}
+
+.banner-cyber {
+  background-color: #e74c3c; /* Red for Cyber Security */
+}
+.banner-cyber::before {
+  border-color: transparent transparent transparent #c0392b;
+}
+
+.banner-web {
+  background-color: #f39c12; /* Orange for Web Development */
+}
+.banner-web::before {
+  border-color: transparent transparent transparent #d35400;
+}
+
+.banner-ai {
+  background-color: #9b59b6; /* Purple for AI/ML */
+}
+.banner-ai::before {
+  border-color: transparent transparent transparent #8e44ad;
+}
+
+/* Responsive styles for banner */
+@media (max-width: 576px) {
+  .member-banner {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+} 

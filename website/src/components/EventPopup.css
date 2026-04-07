@@ -1,0 +1,135 @@
+/* --- OVERRIDING BOOTSTRAP MODAL DEFAULT STYLES --- */
+.custom-tech-modal .modal-content {
+  background: linear-gradient(145deg, #121212, #1a1a2e);
+  color: #ffffff;
+  border: 2px solid #ff4d4d;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 77, 77, 0.3);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling */
+.modal-header-custom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-title-custom {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
+
+.custom-tech-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+  opacity: 0.8;
+}
+
+/* --- MAIN CONTENT STYLING --- */
+.modal-body-custom {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.club-name {
+  color: #8892b0;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.event-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
+
+.event-title .highlight {
+  color: #ff4d4d;
+}
+
+.event-tagline {
+  font-size: 1.1rem;
+  color: #ccd6f6;
+  margin-bottom: 25px;
+}
+
+/* Details Box (Glassmorphism look) */
+.event-details-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.event-details-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.event-details-box li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #e6f1ff;
+}
+
+.event-details-box .icon {
+  margin-right: 10px;
+}
+
+.event-description {
+  font-size: 0.95rem;
+  color: #a8b2d1;
+  line-height: 1.5;
+}
+
+/* --- FOOTER & BUTTONS --- */
+.modal-footer-custom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-close-custom {
+  background: transparent !important;
+  border: 1px solid #8892b0 !important;
+  color: #8892b0 !important;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-close-custom:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* The Hero Button */
+.btn-register-custom {
+  background: #ff4d4d !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 8px;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out !important;
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+}
+
+.btn-register-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 77, 77, 0.7);
+  background: #ff3333 !important;
+}

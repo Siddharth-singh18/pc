@@ -1,0 +1,75 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows", "debian-openssl-3.0.x"]
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int         @id @default(autoincrement())
+  name         String
+  email        String      @unique
+  passwordHash String
+  role         UserRole    @default(MEMBER)
+  isActive     Boolean     @default(true)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  editorials   Editorial[]
+}
+
+model Contest {
+  id          Int         @id @default(autoincrement())
+  slug        String      @unique
+  contestName String
+  platform    Platform
+  date        String
+  curator     String?
+  summary     String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  editorials  Editorial[]
+}
+
+model Editorial {
+  id            Int             @id @default(autoincrement())
+  contestId     Int
+  authorId      Int
+  problemLetter String
+  problemName   String
+  difficulty    String?
+  markdown      String
+  tags          String[]
+  status        EditorialStatus @default(DRAFT)
+  publishedAt   DateTime?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  contest       Contest         @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  author        User            @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  @@unique([contestId, problemLetter])
+}
+
+enum UserRole {
+  ADMIN
+  EDITOR
+  MEMBER
+}
+
+enum Platform {
+  CODEFORCES
+  CODECHEF
+  LEETCODE
+}
+
+enum EditorialStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+}

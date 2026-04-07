@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #342829;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff; /* Change this to match your design */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader-none {
+  display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333; /* Change this to match your design */
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1.0s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+  }
+}
+
+/* Registration Form Styles */
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.register-form-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin-top: 4rem !important;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.register-form {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.register-form .form-label {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.register-form .form-control,
+.register-form .form-select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem;
+}
+
+.register-form .form-control:focus,
+.register-form .form-select:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+}
+
+.register-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.register-form .submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background: #007bff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.register-form .submit-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Event Popup Styles */
+.event-popup .modal-content {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.event-popup .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.event-popup .modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.event-popup .modal-title {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.event-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.event-content h3 {
+  color: #00ff88;
+  margin-bottom: 1rem;
+}
+
+.event-content h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.event-details {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.event-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.event-info li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.event-description {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.event-description ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.event-description ul li {
+  margin: 0.5rem 0;
+  color: #fff;
+  position: relative;
+}
+
+.event-description ul li:before {
+  content: "→";
+  color: #00ff88;
+  position: absolute;
+  left: -1rem;
+}
+
+.event-popup .btn-primary {
+  background: #00ff88;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+
+.event-popup .btn-primary:hover {
+  background: #00cc6a;
+  transform: translateY(-2px);
+}
+
+.event-popup .btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.event-popup .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

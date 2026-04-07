@@ -1,0 +1,438 @@
+/* Team Member Card */
+.team-member-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-member-info {
+  padding: 20px;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.team-member-position {
+  color: #EF334C;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.team-member-bio {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.team-member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.skill-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #EF334C;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #d42a3f;
+}
+
+/* Alumni Card */
+.alumni-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.alumni-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.alumni-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.alumni-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.alumni-position {
+  color: #EF334C;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.alumni-company {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.alumni-testimonial {
+  margin-bottom: 15px;
+  color: #555;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.alumni-batch {
+  background-color: #EF334C;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Service Card */
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #EF334C;
+}
+
+.service-description {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.service-features {
+  margin-bottom: 15px;
+}
+
+.feature-item {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  color: #EF334C;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.technology-tag {
+  background-color: #fde8eb;
+  color: #EF334C;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #EF334C;
+  margin: 15px auto 0;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #EF334C;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Blog Post Card */
+.blog-post-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-post-info {
+  padding: 20px;
+}
+
+.blog-post-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blog-post-excerpt {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.blog-post-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.blog-post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #fde8eb;
+  color: #EF334C;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .team-member-image,
+  .alumni-image,
+  .service-image,
+  .blog-post-image {
+    height: 180px;
+  }
+  
+  .team-member-name,
+  .service-title,
+  .blog-post-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-title p {
+    font-size: 1rem;
+  }
+  
+  .team-member-image,
+  .alumni-image,
+  .service-image,
+  .blog-post-image {
+    height: 160px;
+  }
+  
+  .team-member-name,
+  .service-title,
+  .blog-post-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Navigation Menu Customization */
+.open span:nth-child(2) {
+  border-radius: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.sub-menu {
+  border-radius: 0 !important;
+  background-color: rgba(31, 31, 31, 0.9) !important;
+  padding-left: 40px !important;
+  box-sizing: border-box !important;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease !important;
+}
+
+.oppenned .sub-menu {
+  height: 600px !important;
+  width: 400px !important;
+  border-radius: 0 !important;
+  transform: scale(1);
+}
+
+.sub-menu li {
+  padding-left: 40px !important;
+  margin-left: 100px !important;
+  width: 250px !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  margin-bottom: 15px !important;
+}
+
+.sub-menu li:first-child {
+  margin-top: 150px !important;
+}
+
+.sub-menu li a {
+  padding: 8px 0 !important;
+  transition: all 0.3s ease !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.sub-menu li a:hover {
+  color: #EF334C !important;
+  padding-left: 5px !important;
+}
+
+.sub-menu li:last-child a {
+  color: #EF334C !important;
+  font-weight: bold !important;
+}
+
+.oppenned span:nth-child(2) {
+  height: 600px !important;
+  width: 400px !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.register_button {
+  display: none !important;
+} 
